@@ -18,7 +18,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 
-public abstract class StickerView extends FrameLayout{
+public abstract class StickerView extends FrameLayout {
 
     public static final String TAG = "EmployeeOfTheMonth";
     private BorderView iv_border;
@@ -26,7 +26,7 @@ public abstract class StickerView extends FrameLayout{
     private ImageView iv_delete;
     private ImageView iv_flip;
 
-    // For scalling
+    // For scaleling
     private float this_orgX = -1, this_orgY = -1;
     private float scale_orgX = -1, scale_orgY = -1;
     private double scale_orgWidth = -1, scale_orgHeight = -1;
@@ -170,7 +170,7 @@ public abstract class StickerView extends FrameLayout{
                         Log.v(TAG, "sticker view action move");
                         float offsetX = event.getRawX() - move_orgX;
                         float offsetY = event.getRawY() - move_orgY;
-                        StickerView.this.setX(StickerView.this.getX()+offsetX);
+                        StickerView.this.setX(StickerView.this.getX() + offsetX);
                         StickerView.this.setY(StickerView.this.getY() + offsetY);
                         move_orgX = event.getRawX();
                         move_orgY = event.getRawY();
@@ -262,7 +262,7 @@ public abstract class StickerView extends FrameLayout{
                         Log.v(TAG, "log angle: " + angle);
 
                         //setRotation((float) angle - 45);
-                        setRotation((float) angle - 45);
+                        setRotation((float) angle - 70);
                         Log.v(TAG, "getRotation(): " + getRotation());
 
                         onRotating();
@@ -328,7 +328,7 @@ public abstract class StickerView extends FrameLayout{
 
     protected void onRotating(){}
 
-    private class BorderView extends View{
+    private static class BorderView extends View{
 
         public BorderView(Context context) {
             super(context);

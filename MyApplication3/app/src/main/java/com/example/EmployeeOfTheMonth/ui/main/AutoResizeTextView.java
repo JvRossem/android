@@ -13,7 +13,7 @@ import android.util.SparseIntArray;
 import android.util.TypedValue;
 import android.widget.TextView;
 
-public class AutoResizeTextView extends androidx.appcompat.widget.AppCompatTextView {
+public class AutoResizeTextView extends androidx.appcompat.widget.AppCompatTextView{
     private interface SizeTester {
         /**
          *
@@ -271,8 +271,6 @@ public class AutoResizeTextView extends androidx.appcompat.widget.AppCompatTextV
                 return mid;
             }
         }
-        // make sure to return last best
-        // this is what should always be returned
         return lastBest;
 
     }

@@ -15,4 +15,5 @@
     <string name="save">Save</string>
     <string name="add_sticker">Add Sticker</string>
     <string name="select_share"><![CDATA[Select & Share]]></string>
+    <string name="Ok" />
 </resources>

@@ -7,8 +7,8 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.EmployeeOfTheMonth.CameraFragment;
+import com.example.EmployeeOfTheMonth.ShareFragment;
 import com.example.EmployeeOfTheMonth.EditFragment;
-import com.example.EmployeeOfTheMonth.GalleryFragment;
 
 public class SectionsPagerAdapter extends FragmentStateAdapter{
 
@@ -24,9 +24,9 @@ public class SectionsPagerAdapter extends FragmentStateAdapter{
             case 0:
                 return new CameraFragment();
             case 1:
-                return new GalleryFragment();
-            default:
                 return new EditFragment();
+            default:
+                return new ShareFragment();
             }
         }
 

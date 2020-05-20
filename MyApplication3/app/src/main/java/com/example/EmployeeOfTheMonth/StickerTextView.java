@@ -12,9 +12,6 @@ import android.widget.FrameLayout;
 import com.example.EmployeeOfTheMonth.ui.main.AutoResizeTextView;
 
 
-/**
- * Created by cheungchingai on 6/15/15.
- */
 public class StickerTextView extends StickerView{
     private AutoResizeTextView tv_main;
     public StickerTextView(Context context) {
@@ -35,7 +32,7 @@ public class StickerTextView extends StickerView{
             return tv_main;
 
         tv_main = new AutoResizeTextView(getContext());
-        //tv_main.setTextSize(22);
+        tv_main.setTextSize(30);
         tv_main.setTextColor(Color.WHITE);
         tv_main.setGravity(Gravity.CENTER);
         tv_main.setTextSize(400);
